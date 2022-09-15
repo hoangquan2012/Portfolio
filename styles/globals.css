@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -13,16 +13,56 @@ a {
 
 * {
   box-sizing: border-box;
+
 }
 
 .site-layout {
   background: #fff !important;
 }
 
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background-color: #2E170D !important;
+}
+
+.anticon-instagram,
+.anticon-facebook,
+.anticon-github,
+.anticon-skype {
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  line-height: 2.5 !important;
+}
+
+.anticon-instagram:hover,
+.anticon-facebook:hover,
+.anticon-github:hover,
+.anticon-skype:hover {
+  background-color: #bd5d38 !important;
+}
+
+.ant-switch-checked {
+  background-color: #bd5d38 !important;
+}
+
+.ant-btn:hover {
+  color: #bd5d38 !important;
+  border-color: #bd5d38 !important;
+}
+
+.ant-input-search:hover .ant-input:hover{
+  border-color: #bd5d38 !important;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;
