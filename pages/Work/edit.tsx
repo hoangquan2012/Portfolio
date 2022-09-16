@@ -23,7 +23,7 @@ const tailLayout = {
 
 
 
-const Create = () => {
+const Edit = () => {
     const route = useRouter()
     const [form] = Form.useForm();
 
@@ -104,4 +104,4 @@ const Create = () => {
     );
 };
 
-export default Create;
+export default Edit;

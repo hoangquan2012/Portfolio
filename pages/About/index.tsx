@@ -23,8 +23,8 @@ const About = () => {
             <div>
                 <Link className={styles.social_icon} href='https://ant.design/components/icon/'><InstagramFilled /></Link>
                 <Link className={styles.social_icon} href='https://www.facebook.com/zind09/'><FacebookFilled /></Link>
-                <Link className={styles.social_icon} href='https://ant.design/components/icon/'><GithubFilled /></Link>
-                <Link className={styles.social_icon} href='https://ant.design/components/icon/'><SkypeFilled /></Link>
+                <Link className={styles.social_icon} href='https://github.com/'><GithubFilled /></Link>
+                <Link className={styles.social_icon} href='https://secure.skype.com/portal/overview'><SkypeFilled /></Link>
             </div>
         </div>
     )

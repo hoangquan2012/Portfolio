@@ -6,3 +6,11 @@
     line-height: 1.2;
     color: #343a40;
 }
+
+.controlHook{
+    padding-top: 150px;
+}
+
+.input{
+    width: 50% !important;
+}

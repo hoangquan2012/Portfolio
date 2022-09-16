@@ -58,6 +58,10 @@ a {
   border-color: #bd5d38 !important;
 }
 
+ .ant-select.ant-select-in-form-item{
+  width: 50% !important;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Input, Space, Switch } from 'antd';
 import {
     PlusOutlined,
@@ -121,11 +121,7 @@ export default function Work() {
 
         setActiveId(null);
     }
-    const [items, setItems]: any[] = useState({
-        root: ["Eat", "Game", "Sleep"],
-        container1: ["Learn", "ABC", "DEF"],
-        container2: ["FDS", "VCB8"],
-    });
+    const [items, setItems]: any[] = useState({});
     const [activeId, setActiveId] = useState(null);
 
     const sensors = useSensors(
@@ -137,6 +133,12 @@ export default function Work() {
 
     const route = useRouter()
 
+    useEffect(() => {
+        fetch("/api/work").then((res) => res.json().then((data) => {
+            console.log("fetct", data);
+            setItems(data)
+        })).catch(error => console.error(error))
+    }, [])
     return (
         <div>
             <div style={{ margin: '10px' }}>

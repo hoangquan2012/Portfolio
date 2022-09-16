@@ -18,7 +18,7 @@ const containerStyle = {
 
 
 export default function Container(props: any) {
-    const { id, items, text } = props;
+    const { id, items = [], text } = props;
 
     const { setNodeRef } = useDroppable({
         id
