@@ -11,9 +11,11 @@ export default function handler(
   res: NextApiResponse<any>
 ) {
   let resData;
+
   switch (req.method) {
     case "GET":
-      resData = fs.readFileSync(process.cwd() + "/static/mockdata.json", "utf8")
+      resData = fs.readFileSync(process.cwd() + "/static/mockdata.json", "utf8");
+
       res.status(200).json(JSON.parse(resData))
       break;
     case "POST":
@@ -25,11 +27,8 @@ export default function handler(
       let mockdata: any = fs.readFileSync(process.cwd() + "/static/mockdata.json", "utf8");
       mockdata = JSON.parse(mockdata);
 
-      console.log("vao` 1")
-
       // update data
       if (mockdata[type] && Array.isArray(mockdata[type])) {
-        console.log("vao` 2")
         mockdata[type].push(project)
       }
 

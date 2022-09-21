@@ -29,7 +29,9 @@ const Create = () => {
 
     const onFinish = (values) => {
         console.log(values);
-        fetch("/api/work", { method: "post", body: JSON.stringify(values) }).then((res) => res.json().then(data => console.log("create", data)))
+        fetch("/api/work", { method: "post", body: JSON.stringify(values) })
+        .then((res) => res.json()
+        .then(data => console.log("create", data)))
     };
 
     const onReset = () => {
